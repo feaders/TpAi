@@ -31,7 +31,7 @@ if(isset($_POST['lien'])) {
 </style>
 <div>
     <head>
-        <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+        <link rel="stylesheet" href="http_bootswatch.com_4_flatly_bootstrap.css">
         <title>Resumé facile</title>
     </head>
     <body>

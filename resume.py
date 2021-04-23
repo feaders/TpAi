@@ -56,8 +56,9 @@ def selection_motsAutorises(sorted_dict):
     return liste_final
 
 def estImportant(m):
-    motsBannis=['-', 'ses','pour','aux' , '%', '«','sont', 'est', 'ni','des', 'à', 'et', 'dans', 'au', 'du', 'mais', 'pas', 'sur', 'qu', 'avec','de','je','tu','il','elle','nous','vous','ils','elles','on','ont','me','moi','te','toi','se','soi','ce','le','la','lui','leurs','les','leur','eux','ceux','en','celui','celle','que','qui','quoi','quels','quelle','quelles','quel','dont','ou','où','ci','ça','lequel','laquel','duquel','laquelle','lesquels','auxquels','desquelles','lesquelles','desquels','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','pourtant','un', 'une']
-    return numpy.invert(m in motsBannis)  
+    f = open('mots.txt')
+    motsBannis=f.read().split(',')
+    return numpy.invert(m in motsBannis)
 
 def importance(phrase,liste_final): 
     freq=0
